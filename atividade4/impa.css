@@ -9,9 +9,13 @@ header{
 }
 body{
     display: flex;
+    flex-direction: column;
     background-image: url(../images/images.jpeg);
     background-size: cover;
-
+    text-align: center;
+}
+main{
+    background-color: red;
 }
 .imagem-pulsante{
     width: auto;
