@@ -1,7 +1,13 @@
-let cont_sorte = 0
+let isolado = 0;
+let inscritos = 0;
+let equipes=0;
+
 
 function jogadores(){
-    let inscritos = cont_sorte++;
-    let equipes = (inscritos)
+    inscritos++;
+    equipes = Math.floor(inscritos / 3)
+    isolado =(inscritos % 3)
 
+    let mostrar = document.getElementById('resultado');
+    mostrar.innerHTML += `<p>vai dar ${equipes}</p>`
 }
